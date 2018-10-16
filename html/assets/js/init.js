@@ -45,6 +45,7 @@ $(document).ready(function(){
       $('#id-card').show();
     } else if (event.data.action == 'close') {
       $('#id-card').hide();
+      $('#licenses').html('');
     }
   });
 });
