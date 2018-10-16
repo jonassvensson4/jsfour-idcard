@@ -11,7 +11,7 @@ You also need to have <a href="https://github.com/ESX-Org/es_extended">es_extend
 
 ## SCREENSHOTS
 ![screenshot](https://i.gyazo.com/645a490f474296a9c5ce2a05a16a33c9.png)
-![screenshot](https://i.gyazo.com/eea6138be7a9d056acaf0177850ecdde.png)
+![screenshot](https://i.gyazo.com/f4c14b2efe6f0ff8c88098a4a524e8be.png)
 
 ## USAGE
 ```
