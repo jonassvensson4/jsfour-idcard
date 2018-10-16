@@ -40,4 +40,50 @@ if distance ~= -1 and distance <= 3.0 then
 else
   ESX.ShowNotification('No players nearby')
 end
+
+
+
+
+
+-- A menu (THIS IS AN EXAMPLE)
+function openMenu()
+  ESX.UI.Menu.Open(
+	'default', GetCurrentResourceName(), 'id_card_menu',
+	{
+		title    = 'ID meny',
+		elements = {
+			{label = 'Check your ID', value = 'checkID'},
+			{label = 'Show your ID', value = 'showID'},
+      {label = 'Chec your driver license', value = 'checkDriver'},
+      {label = 'Show your driver license', value = 'showDriver'},
+		}
+	},
+	function(data, menu)
+		if data.current.value == 'checkID' then
+			TriggerServerEvent('jsfour-idcard:open', GetPlayerServerId(PlayerId()), GetPlayerServerId(PlayerId()))
+    elseif data.current.value == 'showID' then
+      local player, distance = ESX.Game.GetClosestPlayer()
+
+      if distance ~= -1 and distance <= 3.0 then
+        TriggerServerEvent('jsfour-idcard:open', GetPlayerServerId(PlayerId()), GetPlayerServerId(player))
+      else
+        ESX.ShowNotification('No players nearby')
+      end
+    elseif data.current.value == 'checkDriver' then
+      TriggerServerEvent('jsfour-idcard:open', GetPlayerServerId(PlayerId()), GetPlayerServerId(PlayerId()), 'driver')
+    elseif data.current.value == 'showDriver' then
+      local player, distance = ESX.Game.GetClosestPlayer()
+
+      if distance ~= -1 and distance <= 3.0 then
+        TriggerServerEvent('jsfour-idcard:open', GetPlayerServerId(PlayerId()), GetPlayerServerId(player), 'driver')
+      else
+        ESX.ShowNotification('No players nearby')
+      end
+		end
+	end,
+	function(data, menu)
+		menu.close()
+	end
+)
+end
 ```
