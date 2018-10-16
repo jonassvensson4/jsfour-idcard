@@ -5,7 +5,9 @@ This is an updated version of my <a href="https://github.com/jonassvensson4/jsfo
 Please don't sell or reupload this resource
 
 ## INSTALLATION
-Drag and drop. It's using the users table that comes with ESX so make sure you've that one installed.
+Drag and drop. 
+You also need to have <a href="https://github.com/ESX-Org/es_extended">es_extended</a> installed.
+
 
 ## SCREENSHOTS
 ![screenshot](https://i.gyazo.com/645a490f474296a9c5ce2a05a16a33c9.png)
