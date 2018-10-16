@@ -15,14 +15,11 @@ end)
 Citizen.CreateThread(function()
 	while true do
 		Wait(0)
-		if IsControlJustReleased(0, 322) or IsControlJustReleased(0, 177) and open then
+		if IsControlJustReleased(0, 322) and open or IsControlJustReleased(0, 177) and open then
 			SendNUIMessage({
 				action = "close"
 			})
 			open = false
-		end
-		if IsControlJustReleased(0, 38) then
-			TriggerServerEvent('jsfour-idcard:open', GetPlayerServerId(PlayerId()), GetPlayerServerId(PlayerId()), 'x')
 		end
 	end
 end)
