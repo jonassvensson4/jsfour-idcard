@@ -60,3 +60,9 @@ img {
   text-transform:capitalize;
   font-family: justsignature;
 }
+#licenses {
+  position: absolute;
+  top: 109px;
+  right: 33px;
+  width: 50px;
+}
