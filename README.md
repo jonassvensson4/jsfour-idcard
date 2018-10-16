@@ -1,5 +1,5 @@
 # jsfour-idcard
-This is an updated version of my jsfour-legitimation. It has and ID card and a driver license
+This is an updated version of my <a href="https://github.com/jonassvensson4/jsfour-legitimation">jsfour-legitimation<a/>. It has and ID card and a driver license
 
 ## LICENSE
 Please don't sell or reupload this resource
