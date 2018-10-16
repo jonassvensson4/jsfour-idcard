@@ -54,7 +54,7 @@ function openMenu()
 		elements = {
 			{label = 'Check your ID', value = 'checkID'},
 			{label = 'Show your ID', value = 'showID'},
-      {label = 'Chec your driver license', value = 'checkDriver'},
+      {label = 'Check your driver license', value = 'checkDriver'},
       {label = 'Show your driver license', value = 'showDriver'},
 		}
 	},
