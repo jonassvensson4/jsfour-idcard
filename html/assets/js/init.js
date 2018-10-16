@@ -37,7 +37,7 @@ $(document).ready(function(){
       $('#signature').text(userData.firstname + ' ' + userData.lastname);
 
       if ( type == 'driver' ) {
-        $('#id-card').css('background', 'url(assets/images/driver.png)');
+        $('#id-card').css('background', 'url(assets/images/license.png)');
       } else {
         $('#id-card').css('background', 'url(assets/images/idcard.png)');
       }
