@@ -50,7 +50,7 @@ function openMenu()
   ESX.UI.Menu.Open(
 	'default', GetCurrentResourceName(), 'id_card_menu',
 	{
-		title    = 'ID meny',
+		title    = 'ID menu',
 		elements = {
 			{label = 'Check your ID', value = 'checkID'},
 			{label = 'Show your ID', value = 'showID'},
