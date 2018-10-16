@@ -22,7 +22,7 @@ local player, distance = ESX.Game.GetClosestPlayer()
 if distance ~= -1 and distance <= 3.0 then
   TriggerServerEvent('jsfour-idcard:open', GetPlayerServerId(PlayerId()), GetPlayerServerId(player))
 else
-  ESX.ShowNotification('Ingen i närheten')
+  ESX.ShowNotification('No players nearby')
 end
 
 
@@ -36,6 +36,6 @@ local player, distance = ESX.Game.GetClosestPlayer()
 if distance ~= -1 and distance <= 3.0 then
   TriggerServerEvent('jsfour-idcard:open', GetPlayerServerId(PlayerId()), GetPlayerServerId(player), 'driver')
 else
-  ESX.ShowNotification('Ingen i närheten')
+  ESX.ShowNotification('No players nearby')
 end
 ```
