@@ -6,7 +6,7 @@ Please don't sell or reupload this resource
 
 ## INSTALLATION
 Drag and drop. 
-You also need to have <a href="https://github.com/ESX-Org/es_extended">es_extended</a> installed.
+You also need to have <a href="https://github.com/ESX-Org/es_extended">es_extended</a> and <a href="https://github.com/ESX-Org/esx_license">esx_license</a> installed.
 
 
 ## SCREENSHOTS
