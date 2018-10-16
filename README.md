@@ -25,6 +25,8 @@ else
   ESX.ShowNotification('Ingen i närheten')
 end
 
+
+
 -- Look at your own driver license
 TriggerServerEvent('jsfour-idcard:open', GetPlayerServerId(PlayerId()), GetPlayerServerId(PlayerId()), 'driver')
 
