@@ -6,7 +6,7 @@ $(document).ready(function(){
       var userData    = event.data.array['user'][0];
       var licenseData = event.data.array['licenses'];
       var sex         = userData.sex;
-      
+
       if ( sex.toLowerCase() == 'm' ) {
         $('img').attr('src', 'assets/images/male.png');
         $('#sex').text('male');
@@ -33,10 +33,12 @@ $(document).ready(function(){
             type = 'car';
           }
 
-          $('#licenses').append('<p>'+ type +'</p>');
+          if ( type == 'bike' || type == 'truck' || type == 'car' ) {
+            $('#licenses').append('<p>'+ type +'</p>');
+          }
         });
       }
-        
+
         $('#id-card').css('background', 'url(assets/images/license.png)');
       } else {
         $('#id-card').css('background', 'url(assets/images/idcard.png)');
