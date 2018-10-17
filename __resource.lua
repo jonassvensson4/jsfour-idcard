@@ -31,7 +31,7 @@ files {
 	'html/assets/js/materialize.js',
 	'html/assets/images/idcard.png',
 	'html/assets/images/license.png',
-	'html/assets/images/weapon.png',
+	'html/assets/images/firearm.png',
 	'html/assets/images/male.png',
 	'html/assets/images/female.png',
 }
