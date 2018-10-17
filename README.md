@@ -43,6 +43,19 @@ else
 end
 
 
+-- Look at your own firearms license
+TriggerServerEvent('jsfour-idcard:open', GetPlayerServerId(PlayerId()), GetPlayerServerId(PlayerId()), 'weapon')
+
+-- Show your firearms license to the closest person
+local player, distance = ESX.Game.GetClosestPlayer()
+
+if distance ~= -1 and distance <= 3.0 then
+  TriggerServerEvent('jsfour-idcard:open', GetPlayerServerId(PlayerId()), GetPlayerServerId(player), 'weapon')
+else
+  ESX.ShowNotification('No players nearby')
+end
+
+
 
 
 
@@ -57,10 +70,20 @@ function openMenu()
 			{label = 'Show your ID', value = 'showID'},
       {label = 'Check your driver license', value = 'checkDriver'},
       {label = 'Show your driver license', value = 'showDriver'},
+      {label = 'Check your firearms license', value = 'checkFirearms'},
+      {label = 'Show your firearms license', value = 'showFirearms'},
 		}
 	},
 	function(data, menu)
-		if data.current.value == 'checkID' then
+		if data.current.value == 'checkFirearms' then
+			TriggerServerEvent('jsfour-idcard:open', GetPlayerServerId(PlayerId()), GetPlayerServerId(PlayerId()), 'weapon')
+		elseif data.current.value == 'showFirearms' then
+			 if distance ~= -1 and distance <= 3.0 then
+        TriggerServerEvent('jsfour-idcard:open', GetPlayerServerId(PlayerId()), GetPlayerServerId(player), 'weapon')
+      else
+        ESX.ShowNotification('No players nearby')
+      end
+		elseif data.current.value == 'checkID' then
 			TriggerServerEvent('jsfour-idcard:open', GetPlayerServerId(PlayerId()), GetPlayerServerId(PlayerId()))
     elseif data.current.value == 'showID' then
       local player, distance = ESX.Game.GetClosestPlayer()
