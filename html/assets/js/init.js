@@ -54,7 +54,7 @@ $(document).ready(function(){
         $('#dob').text(userData.dateofbirth);
         $('#signature').text(userData.firstname + ' ' + userData.lastname);
 
-        $('#id-card').css('background', 'url(assets/images/weapon.png)');
+        $('#id-card').css('background', 'url(assets/images/firearm.png)');
       }
 
       $('#id-card').show();
