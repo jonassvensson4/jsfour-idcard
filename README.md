@@ -17,6 +17,10 @@ You need to add a couple rows of code depending on how you want to use the ID. P
 ![screenshot](https://i.gyazo.com/0aaeaa5b78cd2bef98ee9185bc5295c8.png)
 
 ## USAGE
+
+Example on how to add a button-event since people don't want to learn:
+https://pastebin.com/UPQRcAei
+
 ```
 -- ### Event usages:
 
