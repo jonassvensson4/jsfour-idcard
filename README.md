@@ -8,6 +8,8 @@ Please don't sell or reupload this resource
 Drag and drop. 
 You also need to have <a href="https://github.com/ESX-Org/es_extended">es_extended</a> and <a href="https://github.com/ESX-Org/esx_license">esx_license</a> installed.
 
+You need to add a couple rows of code depending on how you want to use the ID. Please check the **Usage** down below.
+
 
 ## SCREENSHOTS
 ![screenshot](https://i.gyazo.com/645a490f474296a9c5ce2a05a16a33c9.png)
@@ -16,6 +18,8 @@ You also need to have <a href="https://github.com/ESX-Org/es_extended">es_extend
 
 ## USAGE
 ```
+-- ### Event usages:
+
 -- Look at your own ID-card
 TriggerServerEvent('jsfour-idcard:open', GetPlayerServerId(PlayerId()), GetPlayerServerId(PlayerId()))
 
@@ -27,7 +31,6 @@ if distance ~= -1 and distance <= 3.0 then
 else
   ESX.ShowNotification('No players nearby')
 end
-
 
 
 -- Look at your own driver license
@@ -55,11 +58,7 @@ else
   ESX.ShowNotification('No players nearby')
 end
 
-
-
-
-
--- A menu (THIS IS AN EXAMPLE)
+-- ### A menu (THIS IS AN EXAMPLE)
 function openMenu()
   ESX.UI.Menu.Open(
 	'default', GetCurrentResourceName(), 'id_card_menu',
