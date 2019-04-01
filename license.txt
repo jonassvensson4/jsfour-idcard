@@ -1,6 +1,6 @@
 -- *******
 -- Copyright (C) JSFOUR - All Rights Reserved
--- Unauthorized copying of this file, via any medium is strictly prohibited
--- Proprietary and confidential
--- Written by Jonas Svensson, June 2018
+-- You are not allowed to sell this script or re-upload it
+-- Visit my page at https://github.com/jonassvensson4
+-- Written by Jonas Svensson, July 2018
 -- *******
