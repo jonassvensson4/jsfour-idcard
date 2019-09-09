@@ -21,7 +21,7 @@ You need to add a couple rows of code depending on how you want to use the ID. P
 Example on how to add a button-event since people don't want to learn:
 https://pastebin.com/UPQRcAei
 
-```
+```lua
 -- ### Event usages:
 
 -- Look at your own ID-card
