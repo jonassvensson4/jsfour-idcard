@@ -37,9 +37,14 @@ $(document).ready(function(){
               type = 'car';
             }
 
-            if ( type == 'bike' || type == 'truck' || type == 'car' ) {
-              $('#licenses').append('<p>'+ type +'</p>');
-            }
+            if ( type == 'bike') {
+              $('#licenses').append('<p>'+ 'Bike' +'</p>');
+             } else if ( type == 'truck') {
+               $('#licenses').append('<p>'+ 'Truck' +'</p>');
+             } else if ( type == 'car') {
+               $('#licenses').append('<p>'+ 'Car' +'</p>');
+             }
+               
           });
         }
 
